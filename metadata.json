@@ -1,0 +1,9 @@
+{
+  "uuid": "progress-bars@ZingerEngineer.github.com",
+  "name": "Progress Bars",
+  "description": "Track your daily habits, tasks, and learning streaks with visual progress bars.",
+  "version": 1,
+  "settings-schema": "org.gnome.shell.extensions.progress-bars",
+  "shell-version": ["45", "46", "47", "48", "49"],
+  "url": "https://github.com/ZingerEngineer/gnome-progress-bars"
+}

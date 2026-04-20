@@ -1,0 +1,26 @@
+/* ── Inline action buttons (−, +, ↺) ─────────────────────────────────── */
+.pb-btn {
+    padding: 2px 12px;
+    border-radius: 99px;
+    border: 1px solid #888;
+    background-color: #333;
+    color: #ddd;
+    font-size: 0.85em;
+    min-width: 28px;
+    cursor: pointer;
+}
+
+.pb-btn:hover {
+    background-color: #555;
+}
+
+.pb-btn-reset {
+    border-color: #888;
+    background-color: transparent;
+    color: #aaa;
+}
+
+.pb-btn-reset:hover {
+    background-color: #333;
+    color: #eee;
+}

@@ -1,0 +1,106 @@
+/* ── Optional decorative ribbon at the top of a track card ───────────── */
+.pb-ribbon {
+    height: 4px;
+    border-radius: 2px;
+    margin-bottom: 6px;
+    /* background-color set inline from track.ribbon.color */
+}
+
+/* Children of a focused parent draw a shorter ribbon in the parent's
+ * color, anchored to the left edge — visually hangs off the parent's
+ * full-width ribbon. */
+.pb-ribbon-child {
+    min-width: 32px;
+    min-height: 4px;
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+/* Row of short stripes — one per parent — stacked side-by-side so a
+ * child linked to multiple parents shows one stripe per parent. */
+.pb-ribbon-row {
+    spacing: 3px;
+    margin-bottom: 6px;
+}
+
+/* Step-size row sits directly under the +/− buttons. */
+.pb-step-row {
+    margin-top: 4px;
+    spacing: 6px;
+}
+
+/* ── Progress bar ─────────────────────────────────────────────────────── */
+.pb-bar-bg {
+    height: 8px;
+    border-radius: 99px;
+    background-color: #444;
+    margin-top: 4px;
+    overflow: hidden;
+}
+
+.pb-bar-fill {
+    height: 8px;
+    border-radius: 99px;
+    /* Width + background-color are set inline per track from TrackItem.ts */
+}
+
+/* ── Completion dots row (one dot per direct child, capped) ──────────── */
+.pb-bar-dots {
+    spacing: 4px;
+    margin-top: 4px;
+}
+
+.pb-bar-dot,
+.pb-bar-dot-done {
+    width: 8px;
+    height: 8px;
+    border-radius: 99px;
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.pb-bar-dot-done {
+    background-color: #ffffff;
+    box-shadow: 0 0 3px rgba(255, 255, 255, 0.7);
+}
+
+.pb-bar-dot-more {
+    font-size: 0.7em;
+    color: #bbbbbb;
+    margin-left: 4px;
+}
+
+/* ── dateCountdown pace marker — vertical tick on the bar ─────────────── */
+.pb-pace-marker {
+    width: 2px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.pb-pace-marker-behind {
+    background-color: #ffb020;
+}
+
+.pb-bar-pct {
+    font-size: 0.75em;
+    color: #888;
+    margin-top: 2px;
+}
+
+/* ── Panel summary (emoji + count + optional %) ──────────────────────── */
+.pb-panel {
+    spacing: 2px;
+}
+
+.pb-panel-emoji {
+    font-size: 1em;
+}
+
+.pb-panel-count {
+    font-size: 0.85em;
+    color: #eee;
+}
+
+.pb-panel-pct {
+    font-size: 0.8em;
+    color: #bbb;
+}

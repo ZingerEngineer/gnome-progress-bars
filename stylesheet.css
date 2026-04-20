@@ -1,0 +1,65 @@
+/* ── Track container ───────────────────────────────────────────────────── */
+.pb-track {
+    padding: 8px 4px;
+    spacing: 6px;
+}
+
+/* ── Header row: name | streak | button ───────────────────────────────── */
+.pb-track-header {
+    spacing: 10px;
+}
+
+.pb-track-name {
+    font-size: 0.95em;
+    font-weight: bold;
+    color: #eeeeee;
+}
+
+.pb-track-streak {
+    font-size: 0.85em;
+    color: #ffaa44;
+    min-width: 52px;
+    text-align: right;
+}
+/* ── Check-in button ──────────────────────────────────────────────────── */
+.pb-checkin-btn {
+    padding: 2px 12px;
+    border-radius: 99px;
+    border: 1px solid #888;
+    background-color: #333;
+    color: #ddd;
+    font-size: 0.82em;
+    cursor: pointer;
+}
+
+.pb-checkin-btn:hover {
+    background-color: #555;
+}
+
+.pb-checkin-done {
+    border-color: #4caf50;
+    background-color: #1b3a1c;
+    color: #81c784;
+    cursor: default;
+}
+/* ── Progress bar ─────────────────────────────────────────────────────── */
+.pb-bar-bg {
+    height: 8px;
+    border-radius: 99px;
+    background-color: #444;
+    margin-top: 4px;
+    overflow: hidden;
+}
+
+.pb-bar-fill {
+    height: 8px;
+    border-radius: 99px;
+    background-color: #4caf50;
+    /* Width is set inline from TrackItem.ts based on progress value */
+}
+
+.pb-bar-pct {
+    font-size: 0.75em;
+    color: #888;
+    margin-top: 2px;
+}

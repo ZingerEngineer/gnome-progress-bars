@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./gnome-shell-extension",
+    "module": "esnext",
+    "target": "esnext",
+    "types": [],
+    "paths": {
+      "#/": [
+        "./src/"
+      ],
+      "@/": [
+        "./src/"
+      ]
+    },
+    "sourceMap": true,
+    "declaration": false,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "strict": true,
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "gnome-shell-extension",
+    "node_modules"
+  ]
+}

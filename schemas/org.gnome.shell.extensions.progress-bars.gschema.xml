@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.progress-bars"
+          path="/org/gnome/shell/extensions/progress-bars/">
+
+    <!--
+      All tracks are stored as a single JSON string. See
+      src/extension/lib/modes/types.ts for the discriminated-union shape.
+      A track looks like (linear mode example):
+      {
+        "id":            "uuid",
+        "mode":          "linear",
+        "name":          "Rust learning",
+        "iconPath":      "progress-reminder-icons/rust.svg",
+        "colors":        { "normal": "#4caf50", "warning": "#ffaa44", "overdue": "#e53935" },
+        "label":         { "show": true },
+        "reminders":     { "thresholds": [25, 50, 75, 100], "overdueDaily": false },
+        "firedThresholds": [],
+        "hidden":        false,
+        "current":       12,
+        "max":           100,
+        "step":          1
+      }
+    -->
+    <key name="tracks" type="s">
+      <default>'[]'</default>
+      <summary>Tracks data</summary>
+      <description>JSON array of all progress track objects.</description>
+    </key>
+
+    <!--
+      Parent/child graph. Each link is { parentId, childId, order }.
+      Many-to-many is allowed; cycles are rejected by the store.
+    -->
+    <key name="links" type="s">
+      <default>'[]'</default>
+      <summary>Track graph links</summary>
+      <description>JSON array of parent/child edges between tracks.</description>
+    </key>
+
+    <key name="schema-version" type="i">
+      <default>3</default>
+      <summary>Tracks data schema version</summary>
+      <description>Used by the extension to migrate old track data formats.</description>
+    </key>
+
+    <key name="poll-interval-seconds" type="i">
+      <range min="1" max="3600"/>
+      <default>60</default>
+      <summary>Progress poll interval (seconds)</summary>
+      <description>How often time-based tracks and overdue notifications are re-evaluated.</description>
+    </key>
+
+  </schema>
+</schemalist>

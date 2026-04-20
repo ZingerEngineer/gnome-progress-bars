@@ -1,0 +1,141 @@
+/* ── Track container ───────────────────────────────────────────────────── */
+.pb-track {
+    padding: 10px 6px;
+    spacing: 6px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+
+/* Completed: glows a warm gold and shows the "Completed ✓" badge below. */
+.pb-complete {
+    border-color: #ffbb00;
+    background-color: rgba(255, 187, 0, 0.06);
+    box-shadow: 0 0 8px rgba(255, 187, 0, 0.35);
+}
+
+.pb-completed-row {
+    spacing: 6px;
+    margin-top: 4px;
+}
+
+.pb-completed-label {
+    font-size: 0.85em;
+    font-weight: bold;
+    color: #ffbb00;
+}
+
+.pb-completed-icon {
+    color: #ffbb00;
+    icon-size: 14px;
+}
+
+/* ── Header row: icon | name | label ──────────────────────────────────── */
+.pb-track-header {
+    spacing: 10px;
+}
+
+.pb-track-icon {
+    padding-right: 4px;
+}
+
+.pb-track-name {
+    font-size: 0.95em;
+    font-weight: bold;
+    color: #eeeeee;
+}
+
+.pb-track-label {
+    font-size: 0.85em;
+    color: #bbbbbb;
+    min-width: 60px;
+    text-align: right;
+}
+
+/* ── Action row: − + | 👁 › | ↺ ────────────────────────────────────────── */
+.pb-track-actions {
+    spacing: 6px;
+    margin-top: 4px;
+}
+
+.pb-btn-hide,
+.pb-btn-focus,
+.pb-btn-delete {
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: #bbbbbb;
+}
+
+.pb-btn-hide:hover,
+.pb-btn-focus:hover,
+.pb-btn-delete:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-color: #555;
+}
+
+.pb-btn-delete:hover {
+    background-color: rgba(229, 57, 53, 0.18);
+    border-color: #e53935;
+}
+
+.pb-btn-icon {
+    padding: 2px 4px;
+    icon-size: 14px;
+}
+
+/* ── Step-size input (linear / consumption only) ─────────────────────── */
+.pb-step-wrap {
+    spacing: 2px;
+    margin-left: 6px;
+}
+
+.pb-step-entry {
+    width: 56px;
+    font-size: 0.8em;
+    padding: 2px 4px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #eeeeee;
+}
+
+.pb-entry-error {
+    background-color: rgba(229, 57, 53, 0.35);
+}
+
+.pb-step-apply {
+    padding: 0 6px;
+}
+
+/* ── Delete confirm dialog ───────────────────────────────────────────── */
+.pb-dialog-title {
+    font-size: 1.05em;
+    font-weight: bold;
+    color: #eeeeee;
+    padding-bottom: 4px;
+}
+
+.pb-dialog-body {
+    color: #bbbbbb;
+    padding-bottom: 8px;
+}
+
+.pb-dialog-choices {
+    spacing: 4px;
+    margin-top: 6px;
+}
+
+.pb-dialog-choice {
+    padding: 4px 6px;
+    color: #cccccc;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.pb-dialog-choice:hover {
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+.pb-dialog-choice-active {
+    color: #ffffff;
+    border-color: #666;
+}
